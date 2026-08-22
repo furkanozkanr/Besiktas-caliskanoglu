@@ -1,0 +1,17 @@
+{
+  "name": "Beşiktaş Çalışkanoğlu",
+  "short_name": "BJK Çalışkanoğlu",
+  "description": "Fan yapımı, ticari olmayan 3D teknoloji üssü deneyimi. Beşiktaş Jimnastik Kulübü ile resmi bağlantısı yoktur.",
+  "start_url": "/besiktas-caliskanoglu/",
+  "scope": "/besiktas-caliskanoglu/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0a0a0c",
+  "lang": "tr",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
