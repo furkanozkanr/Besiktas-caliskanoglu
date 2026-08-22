@@ -1,0 +1,155 @@
+/* ============================================================
+   BEŞİKTAŞ ÇALIŞKANOĞLU — Design tokens
+   Palette: %65 siyah / %25 beyaz-gri / %10 kırmızı
+   ============================================================ */
+:root {
+  --c-void: #08080a;           /* deepest background */
+  --c-black: #0e0e11;          /* base surface */
+  --c-carbon: #17171b;         /* raised panel */
+  --c-steel: #2a2b30;          /* borders / dividers */
+  --c-metal: #8b8d93;          /* metallic gray text/lines */
+  --c-fog: #b9bac0;            /* secondary text */
+  --c-white: #f3f3f5;          /* primary text */
+  --c-glass: rgba(255, 255, 255, 0.06);
+  --c-glass-strong: rgba(255, 255, 255, 0.1);
+  --c-red: #c8102e;            /* Beşiktaş kırmızısı */
+  --c-red-glow: rgba(200, 16, 46, 0.55);
+  --c-white-glow: rgba(255, 255, 255, 0.35);
+
+  --font-display: 'Barlow Condensed', 'Oswald', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: -apple-system, 'Segoe UI', system-ui, Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', 'Courier New', monospace;
+
+  --nav-height: 68px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overscroll-behavior: none;
+}
+
+body {
+  background: var(--c-void);
+  color: var(--c-white);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
+
+::selection { background: var(--c-red); color: var(--c-white); }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: var(--c-steel); border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+
+/* Focus visibility for accessibility */
+:focus-visible {
+  outline: 2px solid var(--c-red);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+h1, h2, h3, .display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-metal);
+}
+
+.glass-panel {
+  background: linear-gradient(155deg, var(--c-glass-strong), var(--c-glass));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.hairline { height: 1px; background: linear-gradient(90deg, transparent, var(--c-steel), transparent); border: none; }
+
+.text-red { color: var(--c-red); }
+.text-fog { color: var(--c-fog); }
+.text-metal { color: var(--c-metal); }
+
+.glow-red { text-shadow: 0 0 18px var(--c-red-glow); }
+.glow-white { text-shadow: 0 0 14px var(--c-white-glow); }
+
+/* scanline sweep used on hologram surfaces */
+@keyframes scanline {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 0.5; }
+  90% { opacity: 0.5; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+.scanline::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.16), transparent);
+  animation: scanline 3.2s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.6; }
+  94% { opacity: 1; }
+  96% { opacity: 0.75; }
+  97% { opacity: 1; }
+}
+.flicker { animation: flicker 6s ease-in-out infinite; }
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 rgba(200, 16, 46, 0); }
+  50% { box-shadow: 0 0 26px rgba(200, 16, 46, 0.45); }
+}
+.pulse-glow { animation: pulse-glow 2.6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.app-shell {
+  min-height: 100dvh;
+  padding-top: var(--safe-top);
+  padding-left: var(--safe-left);
+  padding-right: var(--safe-right);
+  padding-bottom: calc(var(--nav-height) + var(--safe-bottom));
+  position: relative;
+}
+
+.page-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 18px 32px;
+  position: relative;
+  z-index: 2;
+}
