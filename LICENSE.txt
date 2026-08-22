@@ -1,0 +1,64 @@
+TÜM HAKLARI SAKLIDIR / ALL RIGHTS RESERVED
+
+Proje: BEŞİKTAŞ ÇALIŞKANOĞLU
+Sahibi: sinancaliskanogluabi (fan sayfası)
+Tarih: 2026
+
+--------------------------------------------------------------
+TÜRKÇE
+--------------------------------------------------------------
+
+Bu proje ("Beşiktaş Çalışkanoğlu"), sinancaliskanogluabi fan sayfası
+tarafından, tamamen kişisel bir hediye amacıyla hazırlanmıştır.
+
+Bu depodaki tüm özgün içeriğin (kaynak kod, tasarım, metinler, arma
+tasarımı, animasyon konseptleri, sayfa yapısı ve genel görsel kimlik
+dahil ancak bunlarla sınırlı olmamak üzere) tüm hakları saklıdır ve
+sinancaliskanogluabi fan sayfasına aittir.
+
+Sahibinin önceden yazılı izni olmadan:
+
+  - Bu projenin tamamının veya bir bölümünün kopyalanması,
+  - Başka bir isim/marka altında yeniden yayınlanması veya
+    dağıtılması,
+  - Ticari amaçla kullanılması veya satılması,
+  - Kendi eseriymiş gibi sunulması
+
+KESİNLİKLE YASAKTIR.
+
+Bu proje özel bir hediye olarak hazırlanmıştır ve genel kullanıma
+veya açık kaynak lisansına sunulmamıştır. Depoyu görüntüleme izni,
+içeriği kullanma veya yeniden dağıtma hakkı vermez.
+
+Not: Bu proje tamamen fan yapımı, ticari olmayan bir hayran
+projesidir. Beşiktaş Jimnastik Kulübü veya ilgili kişi/kurumlarla
+resmi bir bağlantısı yoktur. Projedeki arma, resmi kulüp amblemi
+değil, özgün/stilize bir fan-art tasarımdır.
+
+--------------------------------------------------------------
+ENGLISH
+--------------------------------------------------------------
+
+This project ("Beşiktaş Çalışkanoğlu") was created by the
+sinancaliskanogluabi fan page for a purely personal gift.
+
+All original content in this repository (including but not limited
+to source code, design, copy, crest artwork, animation concepts,
+page structure, and overall visual identity) is copyrighted and
+owned exclusively by sinancaliskanogluabi.
+
+Without prior written permission from the owner, you may NOT:
+
+  - Copy this project, in whole or in part,
+  - Republish or redistribute it under another name/brand,
+  - Use it for commercial purposes or sell it,
+  - Present it as your own work.
+
+This project is a private gift and is not released under any open
+source or public license. Access to this repository does not grant
+any right to use or redistribute its contents.
+
+Note: This is a fan-made, non-commercial project with no official
+affiliation to Beşiktaş JK or any related parties. The crest used
+here is an original, stylized fan-art design, not the official club
+emblem.

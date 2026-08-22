@@ -1,0 +1,32 @@
+{
+  "name": "besiktas-caliskanoglu",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Fan-made, non-commercial 3D PWA fan experience dedicated to a Beşiktaş supporter. Not affiliated with Beşiktaş JK.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.160.0",
+    "@react-three/fiber": "^8.15.19",
+    "@react-three/drei": "^9.99.0",
+    "framer-motion": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.160.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "gh-pages": "^6.1.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.1",
+    "vite-plugin-pwa": "^0.20.5"
+  }
+}
