@@ -1,0 +1,67 @@
+.holo-banner {
+  position: relative;
+  margin: 0 auto;
+  max-width: 420px;
+  padding: 18px 16px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(150, 200, 255, 0.08), rgba(150, 200, 255, 0.02));
+  border: 1px solid rgba(180, 210, 255, 0.35);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.holo-banner-frame {
+  position: relative;
+  text-align: center;
+  padding: 10px 6px;
+}
+
+.holo-banner-text {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 4.6vw, 1.35rem);
+  letter-spacing: 0.08em;
+  color: #eaf3ff;
+  margin: 0;
+}
+
+.holo-banner-underline {
+  height: 1px;
+  margin: 10px auto 0;
+  width: 60%;
+  background: linear-gradient(90deg, transparent, #c8102e, transparent);
+}
+
+.holo-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid rgba(200, 225, 255, 0.7);
+}
+.holo-corner.tl { top: 0; left: 0; border-right: none; border-bottom: none; }
+.holo-corner.tr { top: 0; right: 0; border-left: none; border-bottom: none; }
+.holo-corner.bl { bottom: 0; left: 0; border-right: none; border-top: none; }
+.holo-corner.br { bottom: 0; right: 0; border-left: none; border-top: none; }
+
+.holo-banner-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.holo-particle {
+  position: absolute;
+  bottom: -4px;
+  left: calc(var(--i) * 10%);
+  width: 2px;
+  height: 2px;
+  background: #cfe6ff;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: floatUp 4.5s linear infinite;
+  animation-delay: calc(var(--i) * -0.45s);
+}
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0; }
+  15% { opacity: 0.7; }
+  100% { transform: translateY(-70px); opacity: 0; }
+}

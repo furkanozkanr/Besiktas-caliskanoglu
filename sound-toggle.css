@@ -1,0 +1,12 @@
+.sound-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--c-steel);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: var(--c-fog);
+  cursor: pointer;
+}
+.sound-toggle[aria-pressed='true'] { border-color: var(--c-red); color: var(--c-white); }
