@@ -13,7 +13,7 @@ interface TechBase3DProps {
 /** Slowly rotating 3D crest medallion, built from the fan-art crest texture. */
 function CrestMedallion({ onTap }: { onTap: () => void }) {
   const group = useRef<THREE.Group>(null);
-  const texture = useTexture('/assets/logo/crest.png');
+  const texture = useTexture(`${import.meta.env.BASE_URL}assets/logo/crest.png`);
 
   useFrame((_, delta) => {
     if (group.current) group.current.rotation.y += delta * 0.18;

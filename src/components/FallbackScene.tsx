@@ -11,7 +11,7 @@ export default function FallbackScene() {
       <div className="fallback-grid" />
       <div className="fallback-glow" />
       <img
-        src="/assets/logo/crest.png"
+        src={`${import.meta.env.BASE_URL}assets/logo/crest.png`}
         alt=""
         className="fallback-crest flicker"
         draggable={false}

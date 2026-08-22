@@ -23,7 +23,7 @@ export interface Player {
 }
 
 // Placeholder image — swap with /src/assets/players/<file>.webp
-const PLACEHOLDER_IMAGE = '/assets/players/placeholder.svg';
+const PLACEHOLDER_IMAGE = `${import.meta.env.BASE_URL}assets/players/placeholder.svg`;
 
 export const players: Player[] = [
   {

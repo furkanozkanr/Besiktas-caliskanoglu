@@ -57,7 +57,7 @@ export default function SplashScreen({ onDone }: SplashScreenProps) {
           />
 
           <motion.img
-            src="/assets/logo/crest.png"
+            src={`${import.meta.env.BASE_URL}assets/logo/crest.png`}
             alt="Beşiktaş Çalışkanoğlu amblemi"
             className="splash-crest"
             initial={{ opacity: 0, scale: 0.7, filter: 'blur(6px)' }}
