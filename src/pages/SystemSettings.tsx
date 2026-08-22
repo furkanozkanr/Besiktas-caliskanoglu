@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import SoundToggle from '../components/SoundToggle';
-import './system-settings.css';
 
 interface SystemSettingsProps {
   performanceMode: boolean;
